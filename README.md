@@ -8,7 +8,8 @@ They can also be used as a starting point to setup production environments, but 
 
 # Setup of mono-tenant .Stat Suite v8 docker-based installation with three dataspaces
 
-The aim of this document is to provide a reference manual for setting up a demo of .Stat Suite: a mono-tenant configuration with three dataspaces (_design_, _release_ and _hpr_) using KeyCloak service for authentication.
+The aim of this document is to provide a reference manual for setting up a demo of .Stat Suite: a mono-tenant configuration with three dataspaces (_design_, _release_ and _hpr_) using KeyCloak service for authentication.  
+*Note:* "hpr" for High-Performance Read dataspace type, more details [here](https://sis-cc.gitlab.io/dotstatsuite-documentation/using-api/hpr/).
 
 For further details on the requirements please refer to the following GitLab ticket: https://gitlab.com/sis-cc/.stat-suite/dotstatsuite-docker-compose/-/issues/4#note_373485821
 
