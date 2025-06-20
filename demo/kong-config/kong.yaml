@@ -6,6 +6,8 @@ services:
   name: nsi-service
   port: 80
   protocol: http
+  retries: 0 # no retries
+  read_timeout: 300000 # 5 min
   routes:
   - name: catch-all-route
     expression: http.path ^= "/"
@@ -16,6 +18,8 @@ services:
   port: 80
   protocol: http
   path: /rest/data
+  retries: 0 # no retries
+  read_timeout: 300000 # 5 min
   routes:
   - name: data-service-route
     expression: http.path ^= "/rest/data" && http.headers.accept ~ "application/vnd\\.sdmx\\.data\\+json"
