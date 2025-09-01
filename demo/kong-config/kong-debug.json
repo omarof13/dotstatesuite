@@ -47,7 +47,7 @@
         },
 		{
           "name": "ds-availableconstraint-route",
-          "expression": "http.path ^= \"/rest/availableconstraint\" && http.queries.mode == \"available\" && http.headers.accept ~ \"structure\\\\+json\"",
+          "expression": "http.path ^= \"/rest/availableconstraint\" && http.headers.accept ~ \"structure\\\\+json\"",
           "strip_path": false,
 		  "priority": 90
         },
