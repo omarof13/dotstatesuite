@@ -1,0 +1,60 @@
+stages:
+  - setup
+  - test
+  - deploy
+
+variables:
+  NODE_IMAGE: node:16-alpine
+  KUBE_PROJECT: oecd-228113
+  KUBE_CLUSTER: oecd
+  KUBE_REGION: europe-west1
+  KUBE_REGION_FULL: europe-west1-b
+
+.template: &template
+  stage: deploy
+  image: google/cloud-sdk:410.0.0
+  before_script:
+    - echo ${KUBE_ACCOUNT_KEY} | base64 -di > key.json
+    - gke-gcloud-auth-plugin --version
+  script:
+    - gcloud auth activate-service-account --key-file=key.json
+    - gcloud config set project $KUBE_PROJECT
+    - gcloud config set container/cluster $KUBE_CLUSTER
+    - gcloud config set compute/region $KUBE_REGION
+    - gcloud container clusters get-credentials $KUBE_CLUSTER --region $KUBE_REGION_FULL
+    - gsutil -m rsync -d -r ./i18n gs://$ENV-i18n-siscc
+  environment:
+    name: $ENV
+  tags:
+    - kube
+    - oecd
+
+yarn-dependencies:
+  stage: setup
+  needs: []
+  image: $NODE_IMAGE
+  script:
+    - yarn
+  artifacts:
+    paths:
+      - node_modules/
+
+test-json:
+  stage: test
+  needs: [yarn-dependencies]
+  image: $NODE_IMAGE
+  script: yarn json-validate
+
+deploy-qa:
+  variables:
+    ENV: qa
+  <<: *template
+  only:
+    - develop
+
+deploy-staging:
+  variables:
+    ENV: staging
+  <<: *template
+  only:
+    - master

@@ -1,0 +1,24 @@
+{
+  "Properties": {
+    "server.url": "http://localhost:8090"
+  },
+  "Environments": [
+    {
+      "id": "DEMO-DESIGN",
+      "name": "Demo Deisgn",
+      "api": {
+        "query": "http://host.docker.internal:80/rest",
+        "persist": "http://host.docker.internal:80/rest/structure",
+        "delete": "http://host.docker.internal:80/rest",
+        "version": "1.5.0"
+      },
+      "auth": "OIDC_PKCE",
+      "oidc": {
+        "config": "http://host.docker.internal:8080/realms/demo/.well-known/openid-configuration",
+        "clientId": "stat-suite"
+      },
+      "locale": ["en", "fr"],
+      "format": "mlv2.1"
+    }
+  ]
+}
