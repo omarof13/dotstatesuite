@@ -28,13 +28,6 @@ Run the startup script:
 ./start.sh
 ```
 
-When prompted, **answer "N" to both questions**:
-
-```
-Delete config ? (Y/N) → N
-Use api gateway (kong) and sdmx data service ? (Y/N) → N
-```
-
 This will launch the default demo setup using SQL Server as the backend and local host configuration.
 
 ---
