@@ -1,5 +1,4 @@
 services:
-
     nsiws-demo-design:
         image: siscc/sdmxri-nsi-maapi:${NSI_IMAGE_TAG}
         container_name: nsiws-demo-design
@@ -335,7 +334,17 @@ services:
           - "db-data:/var/opt/mssql/data"
         networks:
           - dotstat_network
-
+    fmr-workbench:
+        image: sdmxio/fwb:latest
+        container_name: fmr-workbench
+        restart: unless-stopped
+        ports:
+            - "8090:8080"
+        volumes:
+            - ./config/configs/fmr-app.json:/root/MetadataTechnology/FusionRegistry/fwb_config.json:ro
+            - ./logs/fmr:/usr/local/tomcat/logs
+        networks:
+            - dotstat_network
 volumes:
   db-data:
 
