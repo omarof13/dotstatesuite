@@ -87,6 +87,9 @@ docker compose -f docker-compose-demo-keycloak.yml up -d --quiet-pull
 echo "Starting .Net services using" $DOTNET_COMPOSE_FILE
 docker compose -f "$DOTNET_COMPOSE_FILE" up -d --quiet-pull
 
+echo "Starting FMR Workbench"
+docker compose -f "$DOTNET_COMPOSE_FILE" up -d fmr-workbench
+
 echo "Starting JS services"
 docker compose -f docker-compose-demo-js.yml up -d --quiet-pull
 
