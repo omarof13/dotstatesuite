@@ -47,6 +47,7 @@ This will launch the default demo setup using SQL Server as the backend and loca
 
 Once startup completes, you can access the web interfaces at:
 
+* **FMR Workbench:** [http://localhost:8090/](http://localhost:8090/)
 * **Data Lifecycle Manager:** [http://localhost:7000/](http://localhost:7000/)
 * **Data Explorer:** [http://localhost:7001/](http://localhost:7001/)
 * **Data Viewer:** [http://localhost:7002/](http://localhost:7002/)
