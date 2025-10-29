@@ -1,6 +1,6 @@
 # .Stat Suite Docker Compose
 
-This repository provides a **Docker Compose setup** to easily run and explore the [.Stat Suite](https://sis-cc.gitlab.io/dotstatsuite-documentation/) ecosystem locally. It allows developers, testers, and data professionals to deploy a complete .Stat Suite environment with all its components (backend, frontend, Keycloak, databases) using Docker containers.
+This repository provides a **Docker Compose setup** to easily run and explore the [.Stat Suite](https://sis-cc.gitlab.io/dotstatsuite-documentation/) ecosystem locally. It allows developers, testers, and data professionals to deploy a complete .Stat Suite environment with all its components (backend, frontend, Keycloak, databases, and FMR Workbench) using Docker containers.
 
 The compose setup is preconfigured for a **demo environment**, ideal for evaluation, experimentation, or integration testing. It automatically provisions the required services and connects them together to provide a fully functional .Stat instance running locally.
 
@@ -41,7 +41,7 @@ This will launch the default demo setup using SQL Server as the backend and loca
 
 ## 🧩 What Happens
 
-* Docker images for all .Stat Suite components (backend, frontend, and Keycloak) are pulled and started.
+* Docker images for all .Stat Suite components (backend, frontend, Keycloak, and FMR Workbench) are pulled and started.
 * The configuration is generated under the `demo/config/` directory.
 * All services become accessible locally (e.g. Data Lifecycle Manager, Data Explorer, Data Viewer, etc.).
 
@@ -62,6 +62,43 @@ To stop all running containers:
 ```bash
 ./stop.sh
 ```
+
+---
+
+## 🧰 Troubleshooting
+
+### 🧾 Scenario: FMR Workbench not showing schemes or dataflows
+
+If the **FMR Workbench** does not display the **schemes** or **dataflows** that were previously created in the **Data Lifecycle Manager**, it usually means the container has lost sync with the backend services.
+
+To fix this, simply **restart the `fmr-workbench` container**.
+
+#### Option 1 — Restart via Docker Desktop
+
+1. Open **Docker Desktop**.
+2. Go to the **Containers** tab.
+3. Locate the container named `fmr-workbench`.
+4. Click the **Restart** button (⟳ icon) next to it.
+
+This will stop and relaunch the container, reinitializing its internal cache.
+
+#### Option 2 — Restart via Command Line
+
+Open a terminal (e.g., Git Bash or PowerShell) and run:
+
+```bash
+docker restart fmr-workbench
+```
+
+You should see:
+
+```
+fmr-workbench
+```
+
+indicating a successful restart.
+
+After restarting, refresh the **FMR Workbench** UI in your browser — the schemes and dataflows should reappear.
 
 ---
 
