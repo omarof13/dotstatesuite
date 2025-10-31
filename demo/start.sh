@@ -84,6 +84,19 @@ echo "Starting Keycloak services"
 #docker compose -f docker-compose-demo-keycloak.yml up -d --quiet-pull --pull always
 docker compose -f docker-compose-demo-keycloak.yml up -d --quiet-pull
 
+# Wait for Keycloak to be healthy
+echo "Waiting for Keycloak to be ready..."
+
+# Wait until Keycloak responds with a successful HTTP status code
+until curl -fsS http://localhost:8080 >/dev/null 2>&1; do
+  printf "."
+  sleep 5
+done
+
+echo ""
+echo "✅ Keycloak is reachable on http://localhost:8080, proceeding..."
+
+
 echo "Starting .Net services using" $DOTNET_COMPOSE_FILE
 docker compose -f "$DOTNET_COMPOSE_FILE" up -d --quiet-pull
 
