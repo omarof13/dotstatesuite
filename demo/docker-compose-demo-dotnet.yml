@@ -336,6 +336,8 @@ services:
         networks:
           - dotstat_network
     fmr-workbench:
+        extra_hosts:
+            - "host.docker.internal:host-gateway"    
         image: sdmxio/fwb:latest
         container_name: fmr-workbench
         restart: unless-stopped
