@@ -207,6 +207,7 @@ In Firefox, open the following URLs:
 | Data Lifecycle Manager | [http://localhost:7000/](http://localhost:7000/) | test-admin / admin |
 | Data Explorer | [http://localhost:7001/](http://localhost:7001/) | test-admin / admin |
 | Fusion Metadata Registry (Workbench) | [http://localhost:8090/](http://localhost:8090/) | test-admin / admin |
+| Portainer | [http://localhost:9443/](http://localhost:9443/) | create new user for the first start |
 
 ---
 
