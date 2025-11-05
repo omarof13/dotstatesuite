@@ -348,9 +348,21 @@ services:
             - ./logs/fmr:/usr/local/tomcat/logs
         networks:
             - dotstat_network
-
+    portainer:
+        image: portainer/portainer-ce:latest
+        container_name: portainer
+        restart: always
+        ports:
+            - "8000:8000"
+            - "9443:9443"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - portainer_data:/data
+        networks:
+            - dotstat_network
 volumes:
   db-data:
+  portainer_data:
 
 networks:
   dotstat_network:
