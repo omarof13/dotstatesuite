@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF2</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-22T13:11:40.0808158-04:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Constraints>
+      <structure:ContentConstraint id="CC_Yukon" agencyID="STAT" version="1.0" isFinal="false" type="Allowed">
+        <common:Name xml:lang="en">Constraint_Yukon</common:Name>
+        <common:Name xml:lang="fr">Constraint_Yukon</common:Name>
+        <common:Description xml:lang="en">Constraint_Yukon</common:Description>
+        <common:Description xml:lang="fr">Constraint_Yukon</common:Description>
+        <structure:ConstraintAttachment>
+          <structure:Dataflow>
+            <Ref id="DF_POP" version="1.0" agencyID="STAT" package="datastructure" class="Dataflow" />
+          </structure:Dataflow>
+        </structure:ConstraintAttachment>
+        <structure:CubeRegion include="true">
+          <common:KeyValue id="REF_AREA">
+            <common:Value>YT</common:Value>
+          </common:KeyValue>
+        </structure:CubeRegion>
+      </structure:ContentConstraint>
+    </structure:Constraints>
+  </message:Structures>
+</message:Structure>

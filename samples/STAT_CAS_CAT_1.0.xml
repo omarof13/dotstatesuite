@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF6</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-16T11:42:23.3230798-04:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="CAS_CAT" agencyID="STAT" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Categories</common:Name>
+        <common:Name xml:lang="fr">Categories</common:Name>
+        <structure:Category id="POP">
+          <common:Name xml:lang="en">Population</common:Name>
+          <common:Name xml:lang="fr">Population</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+    <structure:Categorisations>
+      <structure:Categorisation id="CAT_POP_DF_POP_STAT_1_0" agencyID="STAT" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Category 'STAT.CAS_CAT.POP' linking to Dataflow 'DF_POP'</common:Name>
+        <structure:Source>
+          <Ref id="DF_POP" version="1.0" agencyID="STAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="POP" maintainableParentID="CAS_CAT" maintainableParentVersion="1.0" agencyID="STAT" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+    </structure:Categorisations>
+  </message:Structures>
+</message:Structure>

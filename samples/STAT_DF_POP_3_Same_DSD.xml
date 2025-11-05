@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF2</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-16T11:34:08.3817085-04:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DF_POP3" agencyID="STAT" version="1.0" isExternalReference="false" isFinal="false">
+        <common:Name xml:lang="en">Population by sex and year2</common:Name>
+        <common:Name xml:lang="fr">Population par sexe et année2</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_POP2" version="1.0" agencyID="STAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+  </message:Structures>
+</message:Structure>

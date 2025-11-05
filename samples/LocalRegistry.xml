@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+  <message:Header>
+    <message:ID>STAT_POP_STRUCTURES</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+    <message:Sender id="STAT"/>
+  </message:Header>
+
+  <message:Structures>
+
+    <!-- ==================== AGENCY SCHEME ==================== -->
+    <structure:OrganisationSchemes>
+      <structure:AgencyScheme id="AGENCIES" agencyID="STAT" version="1.0">
+        <common:Name xml:lang="en">Stat Agency Scheme</common:Name>
+        <common:Name xml:lang="fr">Schéma d'agence Stat</common:Name>
+        <structure:Agency id="STAT">
+          <common:Name xml:lang="en">Statistics Canada</common:Name>
+          <common:Name xml:lang="fr">Statistique Canada</common:Name>
+        </structure:Agency>
+      </structure:AgencyScheme>
+    </structure:OrganisationSchemes>
+
+    <!-- ==================== CODELISTS ==================== -->
+    <structure:Codelists>
+      <structure:Codelist id="CL_REF_AREA" agencyID="STAT" version="1.0">
+        <common:Name xml:lang="en">Reference area</common:Name>
+        <common:Name xml:lang="fr">Zone géographique</common:Name>
+        <structure:Code id="CA"><common:Name xml:lang="en">Canada</common:Name><common:Name xml:lang="fr">Canada</common:Name></structure:Code>
+        <structure:Code id="AB"><common:Name xml:lang="en">Alberta</common:Name><common:Name xml:lang="fr">Alberta</common:Name></structure:Code>
+        <structure:Code id="BC"><common:Name xml:lang="en">British Columbia</common:Name><common:Name xml:lang="fr">Colombie-Britannique</common:Name></structure:Code>
+        <structure:Code id="MB"><common:Name xml:lang="en">Manitoba</common:Name><common:Name xml:lang="fr">Manitoba</common:Name></structure:Code>
+        <structure:Code id="NB"><common:Name xml:lang="en">New Brunswick</common:Name><common:Name xml:lang="fr">Nouveau-Brunswick</common:Name></structure:Code>
+        <structure:Code id="NL"><common:Name xml:lang="en">Newfoundland and Labrador</common:Name><common:Name xml:lang="fr">Terre-Neuve-et-Labrador</common:Name></structure:Code>
+        <structure:Code id="NS"><common:Name xml:lang="en">Nova Scotia</common:Name><common:Name xml:lang="fr">Nouvelle-Écosse</common:Name></structure:Code>
+        <structure:Code id="NT"><common:Name xml:lang="en">Northwest Territories</common:Name><common:Name xml:lang="fr">Territoires du Nord-Ouest</common:Name></structure:Code>
+        <structure:Code id="NU"><common:Name xml:lang="en">Nunavut</common:Name><common:Name xml:lang="fr">Nunavut</common:Name></structure:Code>
+        <structure:Code id="ON"><common:Name xml:lang="en">Ontario</common:Name><common:Name xml:lang="fr">Ontario</common:Name></structure:Code>
+        <structure:Code id="PE"><common:Name xml:lang="en">Prince Edward Island</common:Name><common:Name xml:lang="fr">Île-du-Prince-Édouard</common:Name></structure:Code>
+        <structure:Code id="QC"><common:Name xml:lang="en">Quebec</common:Name><common:Name xml:lang="fr">Québec</common:Name></structure:Code>
+        <structure:Code id="SK"><common:Name xml:lang="en">Saskatchewan</common:Name><common:Name xml:lang="fr">Saskatchewan</common:Name></structure:Code>
+        <structure:Code id="YT"><common:Name xml:lang="en">Yukon</common:Name><common:Name xml:lang="fr">Yukon</common:Name></structure:Code>
+      </structure:Codelist>
+
+      <structure:Codelist id="CL_SEX" agencyID="STAT" version="1.0">
+        <common:Name xml:lang="en">Sex</common:Name>
+        <common:Name xml:lang="fr">Sexe</common:Name>
+        <structure:Code id="T"><common:Name xml:lang="en">Total</common:Name><common:Name xml:lang="fr">Total</common:Name></structure:Code>
+        <structure:Code id="M"><common:Name xml:lang="en">Male</common:Name><common:Name xml:lang="fr">Homme</common:Name></structure:Code>
+        <structure:Code id="F"><common:Name xml:lang="en">Female</common:Name><common:Name xml:lang="fr">Femme</common:Name></structure:Code>
+      </structure:Codelist>
+    </structure:Codelists>
+
+    <!-- ==================== CONCEPT SCHEME ==================== -->
+    <structure:Concepts>
+      <structure:ConceptScheme id="CS_Population" agencyID="STAT" version="1.0">
+        <common:Name xml:lang="en">Concept Scheme of Population</common:Name>
+        <common:Name xml:lang="fr">Schéma de concepts de la population</common:Name>
+        <structure:Concept id="TIME_PERIOD">
+          <common:Name xml:lang="en">Time period</common:Name>
+          <common:Name xml:lang="fr">Période</common:Name>
+        </structure:Concept>
+        <structure:Concept id="REF_AREA">
+          <common:Name xml:lang="en">Reference area</common:Name>
+          <common:Name xml:lang="fr">Zone géographique</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SEX">
+          <common:Name xml:lang="en">Sex</common:Name>
+          <common:Name xml:lang="fr">Sexe</common:Name>
+        </structure:Concept>
+        <structure:Concept id="OBS_VALUE">
+          <common:Name xml:lang="en">Observation value</common:Name>
+          <common:Name xml:lang="fr">Valeur d'observation</common:Name>
+        </structure:Concept>
+      </structure:ConceptScheme>
+    </structure:Concepts>
+
+    <!-- ==================== DATA STRUCTURE (DSD_POP) ==================== -->
+   <structure:DataStructures>
+      <structure:DataStructure id="DSD_POP" agencyID="STAT" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Population by sex and year</common:Name>
+        <common:Name xml:lang="fr">Population par sexe et année</common:Name>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor">
+            <structure:Dimension id="REF_AREA" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REF_AREA" version="1.0" agencyID="STAT" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SEX" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="SEX" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SEX" version="1.0" agencyID="STAT" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:MeasureList id="MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="Double" />
+              </structure:LocalRepresentation>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+  </message:Structures>
+</message:Structure>

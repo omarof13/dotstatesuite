@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+  <message:Header>
+    <message:ID>STAT_POP2_STRUCTURES</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+    <message:Sender id="STAT"/>
+  </message:Header>
+
+  <message:Structures>
+
+
+    <!-- ==================== DATA STRUCTURE (DSD_POP) ==================== -->
+   <structure:DataStructures>
+      <structure:DataStructure id="DSD_POP2" agencyID="STAT" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Population by sex and year2</common:Name>
+        <common:Name xml:lang="fr">Population par sexe et année2</common:Name>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor">
+            <structure:Dimension id="REF_AREA" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REF_AREA" version="1.0" agencyID="STAT" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SEX" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="SEX" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SEX" version="1.0" agencyID="STAT" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:MeasureList id="MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_Population" maintainableParentVersion="1.0" agencyID="STAT" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="Double" />
+              </structure:LocalRepresentation>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+  </message:Structures>
+</message:Structure>
