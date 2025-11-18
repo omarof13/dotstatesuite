@@ -1,0 +1,9 @@
+services:
+  data-lifecycle-manager:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # Optional, only if your AUTH_PROVIDER / API URLs in data-explorer use host.docker.internal
+  data-explorer:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
