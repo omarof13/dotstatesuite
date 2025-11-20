@@ -54,7 +54,7 @@
         "dataqueries": [
 		  {
             "version": "1.0",
-            "categorySchemeId": "CAS_CAT",
+            "categorySchemeId": "CS_TOPICS_HIERARCHY",
             "agencyId": "STAT"
           }	
         ]
@@ -65,7 +65,7 @@
         "dataqueries": [
 		  {
             "version": "1.0",
-            "categorySchemeId": "CAS_CAT",
+            "categorySchemeId": "CS_TOPICS_HIERARCHY",
             "agencyId": "STAT"
           }	
         ]
@@ -76,7 +76,7 @@
         "dataqueries": [
 		  {
             "version": "1.0",
-            "categorySchemeId": "CAS_CAT",
+            "categorySchemeId": "CS_TOPICS_HIERARCHY",
             "agencyId": "STAT"
           }	
         ]

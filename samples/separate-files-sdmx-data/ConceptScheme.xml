@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+    <message:Header>
+        <message:ID>CONCEPTS</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+    </message:Header>
+
+    <message:Structures>
+        <structure:Concepts>
+            <structure:ConceptScheme id="CS_Population" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Concept Scheme of Population</common:Name>
+                <common:Name xml:lang="fr">Schéma de concepts de la population</common:Name>
+
+                <structure:Concept id="TIME_PERIOD">
+                    <common:Name xml:lang="en">Time period</common:Name>
+                    <common:Name xml:lang="fr">Période</common:Name>
+                </structure:Concept>
+
+                <structure:Concept id="REF_AREA">
+                    <common:Name xml:lang="en">Reference area</common:Name>
+                    <common:Name xml:lang="fr">Zone géographique</common:Name>
+                </structure:Concept>
+
+                <structure:Concept id="SEX">
+                    <common:Name xml:lang="en">Sex</common:Name>
+                    <common:Name xml:lang="fr">Sexe</common:Name>
+                </structure:Concept>
+
+                <structure:Concept id="OBS_VALUE">
+                    <common:Name xml:lang="en">Observation value</common:Name>
+                    <common:Name xml:lang="fr">Valeur d'observation</common:Name>
+                </structure:Concept>
+
+            </structure:ConceptScheme>
+        </structure:Concepts>
+    </message:Structures>
+</message:Structure>

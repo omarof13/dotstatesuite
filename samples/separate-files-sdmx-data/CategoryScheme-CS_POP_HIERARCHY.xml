@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+    <message:Header>
+        <message:ID>CS_POP_HIERARCHY</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+    </message:Header>
+
+    <message:Structures>
+        <structure:CategorySchemes>
+
+            <structure:CategoryScheme id="CS_TOPICS_HIERARCHY" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Topic</common:Name>
+                <common:Name xml:lang="fr">Thème</common:Name>
+
+                <!-- ============================= -->
+                <!-- LEVEL 1: Population & Demography -->
+                <!-- ============================= -->
+                <structure:Category id="POP_DEM">
+                    <common:Name xml:lang="en">Population and Demography</common:Name>
+                    <common:Name xml:lang="fr">Population et démographie</common:Name>
+
+                    <!-- ============================= -->
+                    <!-- LEVEL 2: Population Statistics -->
+                    <!-- ============================= -->
+                    <structure:Category id="POP_STATS">
+                        <common:Name xml:lang="en">Population Statistics</common:Name>
+                        <common:Name xml:lang="fr">Statistiques de population</common:Name>
+
+                        <!-- ============================= -->
+                        <!-- LEVEL 3: Population by Sex and Year -->
+                        <!-- ============================= -->
+                        <structure:Category id="POP_SEX_YEAR">
+                            <common:Name xml:lang="en">Population by Sex and Year</common:Name>
+                            <common:Name xml:lang="fr">Population par sexe et année</common:Name>
+                        </structure:Category>
+
+                    </structure:Category>
+                </structure:Category>
+
+            </structure:CategoryScheme>
+
+        </structure:CategorySchemes>
+    </message:Structures>
+</message:Structure>

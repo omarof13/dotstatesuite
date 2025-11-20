@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+    <message:Header>
+        <message:ID>CODELISTS</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+    </message:Header>
+
+    <message:Structures>
+        <structure:Codelists>
+
+            <!-- CL_REF_AREA -->
+            <structure:Codelist id="CL_REF_AREA" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Reference area</common:Name>
+                <common:Name xml:lang="fr">Zone géographique</common:Name>
+
+                <structure:Code id="CA"><common:Name xml:lang="en">Canada</common:Name><common:Name xml:lang="fr">Canada</common:Name></structure:Code>
+                <structure:Code id="AB"><common:Name xml:lang="en">Alberta</common:Name><common:Name xml:lang="fr">Alberta</common:Name></structure:Code>
+                <structure:Code id="BC"><common:Name xml:lang="en">British Columbia</common:Name><common:Name xml:lang="fr">Colombie-Britannique</common:Name></structure:Code>
+                <structure:Code id="MB"><common:Name xml:lang="en">Manitoba</common:Name><common:Name xml:lang="fr">Manitoba</common:Name></structure:Code>
+                <structure:Code id="NB"><common:Name xml:lang="en">New Brunswick</common:Name><common:Name xml:lang="fr">Nouveau-Brunswick</common:Name></structure:Code>
+                <structure:Code id="NL"><common:Name xml:lang="en">Newfoundland and Labrador</common:Name><common:Name xml:lang="fr">Terre-Neuve-et-Labrador</common:Name></structure:Code>
+                <structure:Code id="NS"><common:Name xml:lang="en">Nova Scotia</common:Name><common:Name xml:lang="fr">Nouvelle-Écosse</common:Name></structure:Code>
+                <structure:Code id="NT"><common:Name xml:lang="en">Northwest Territories</common:Name><common:Name xml:lang="fr">Territoires du Nord-Ouest</common:Name></structure:Code>
+                <structure:Code id="NU"><common:Name xml:lang="en">Nunavut</common:Name><common:Name xml:lang="fr">Nunavut</common:Name></structure:Code>
+                <structure:Code id="ON"><common:Name xml:lang="en">Ontario</common:Name><common:Name xml:lang="fr">Ontario</common:Name></structure:Code>
+                <structure:Code id="PE"><common:Name xml:lang="en">Prince Edward Island</common:Name><common:Name xml:lang="fr">Île-du-Prince-Édouard</common:Name></structure:Code>
+                <structure:Code id="QC"><common:Name xml:lang="en">Quebec</common:Name><common:Name xml:lang="fr">Québec</common:Name></structure:Code>
+                <structure:Code id="SK"><common:Name xml:lang="en">Saskatchewan</common:Name><common:Name xml:lang="fr">Saskatchewan</common:Name></structure:Code>
+                <structure:Code id="YT"><common:Name xml:lang="en">Yukon</common:Name><common:Name xml:lang="fr">Yukon</common:Name></structure:Code>
+            </structure:Codelist>
+
+            <!-- CL_SEX -->
+            <structure:Codelist id="CL_SEX" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Sex</common:Name>
+                <common:Name xml:lang="fr">Sexe</common:Name>
+
+                <structure:Code id="T"><common:Name xml:lang="en">Total</common:Name><common:Name xml:lang="fr">Total</common:Name></structure:Code>
+                <structure:Code id="M"><common:Name xml:lang="en">Male</common:Name><common:Name xml:lang="fr">Homme</common:Name></structure:Code>
+                <structure:Code id="F"><common:Name xml:lang="en">Female</common:Name><common:Name xml:lang="fr">Femme</common:Name></structure:Code>
+            </structure:Codelist>
+
+        </structure:Codelists>
+    </message:Structures>
+</message:Structure>

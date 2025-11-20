@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:StructureSpecificData
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:ss="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ns1="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=STAT:DF_POP(1.0):ObsLevelDim:TIME_PERIOD">
+
+    <message:Header>
+        <message:ID>POP_DATA_SS</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-17T12:00:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+
+        <!-- VERY IMPORTANT PART: link to the dataflow (and behind it, the DSD) -->
+        <message:Structure
+            structureID="STAT_DF_POP_1_0"
+            namespace="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=STAT:DF_POP(1.0):ObsLevelDim:TIME_PERIOD"
+            dimensionAtObservation="TIME_PERIOD">
+            <common:StructureUsage>
+                <!-- This is your dataflow DF_POP -->
+                <Ref agencyID="STAT" id="DF_POP" version="1.0"/>
+            </common:StructureUsage>
+        </message:Structure>
+
+        <!-- Dataset action (optional but clean) -->
+        <message:DataSetAction>Information</message:DataSetAction>
+    </message:Header>
+
+    <!-- The dataset now references the Structure defined in the header -->
+    <message:DataSet
+        ss:dataScope="DataStructure"
+        ss:structureRef="STAT_DF_POP_1_0"
+        xsi:type="ns1:DataSetType">
+
+        <!-- ================= CANADA (CA) ================= -->
+
+        <Series REF_AREA="CA" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="38000000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="38400000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="38900000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="39500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="40100000"/>
+        </Series>
+
+        <Series REF_AREA="CA" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="18700000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="18900000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="19200000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="19500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="19800000"/>
+        </Series>
+
+        <Series REF_AREA="CA" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="19300000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="19500000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="19700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="20000000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="20300000"/>
+        </Series>
+
+        <!-- ================= QUEBEC (QC) ================= -->
+
+        <Series REF_AREA="QC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="8600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="8700000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="8750000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="8800000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="8900000"/>
+        </Series>
+
+        <Series REF_AREA="QC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4240000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4280000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4300000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4340000"/>
+        </Series>
+
+        <Series REF_AREA="QC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4400000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4460000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4470000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4560000"/>
+        </Series>
+
+        <!-- ================= ONTARIO (ON) ================= -->
+
+        <Series REF_AREA="ON" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="14700000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="14900000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="15100000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="15300000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="15500000"/>
+        </Series>
+
+        <Series REF_AREA="ON" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="7200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="7300000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="7400000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="7500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="7600000"/>
+        </Series>
+
+        <Series REF_AREA="ON" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="7500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="7600000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="7700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="7800000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="7900000"/>
+        </Series>
+
+        <!-- ================= BRITISH COLUMBIA (BC) ================= -->
+
+        <Series REF_AREA="BC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="5100000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="5200000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="5300000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="5400000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="5500000"/>
+        </Series>
+
+        <Series REF_AREA="BC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2550000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2600000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2650000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2700000"/>
+        </Series>
+
+        <Series REF_AREA="BC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2650000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2750000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2800000"/>
+        </Series>
+
+        <!-- ================= ALBERTA (AB) ================= -->
+
+        <Series REF_AREA="AB" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4400000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4450000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4500000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4550000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4600000"/>
+        </Series>
+
+        <Series REF_AREA="AB" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2230000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2250000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2270000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2300000"/>
+        </Series>
+
+        <Series REF_AREA="AB" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2220000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2250000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2280000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2300000"/>
+        </Series>
+
+    </message:DataSet>
+</message:StructureSpecificData>
