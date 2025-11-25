@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+  <message:Header>
+    <message:ID>IDREF_DF_POP_HCL</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-11-25T15:21:19.7997275+00:00</message:Prepared>
+    <message:Sender id="STAT"/>
+    <message:Receiver id="Unknown"/>
+  </message:Header>
+
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DF_POP" agencyID="STAT" version="1.0" isFinal="false">
+
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>HIER_CONTEXT</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">
+              REF_AREA:STAT:HCL_REF_AREA(1.0).CA_HIER
+            </common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+		  
+        <common:Name xml:lang="en">Population by sex and year</common:Name>
+        <common:Name xml:lang="fr">Population par sexe et année</common:Name>
+
+        <structure:Structure>
+          <Ref id="DSD_POP"
+               version="1.0"
+               agencyID="STAT"
+               package="datastructure"
+               class="DataStructure"/>
+        </structure:Structure>
+
+      </structure:Dataflow>
+    </structure:Dataflows>
+  </message:Structures>
+</message:Structure>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:StructureSpecificData
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:ss="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ns1="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=STAT:DF_POP(1.0):ObsLevelDim:TIME_PERIOD">
+
+    <message:Header>
+        <message:ID>POP_DATA_SS</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-17T12:00:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+
+        <!-- Link to the dataflow -->
+        <message:Structure
+            structureID="STAT_DF_POP_1_0"
+            namespace="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=STAT:DF_POP(1.0):ObsLevelDim:TIME_PERIOD"
+            dimensionAtObservation="TIME_PERIOD">
+            <common:StructureUsage>
+                <Ref agencyID="STAT" id="DF_POP" version="1.0"/>
+            </common:StructureUsage>
+        </message:Structure>
+
+        <message:DataSetAction>Information</message:DataSetAction>
+    </message:Header>
+
+    <message:DataSet
+        ss:dataScope="DataStructure"
+        ss:structureRef="STAT_DF_POP_1_0"
+        xsi:type="ns1:DataSetType">
+
+        <!-- ================= CANADA (CA) ================= -->
+
+        <Series REF_AREA="CA" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="38000000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="38400000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="38900000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="39500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="40100000"/>
+        </Series>
+
+        <Series REF_AREA="CA" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="18700000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="18900000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="19200000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="19500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="19800000"/>
+        </Series>
+
+        <Series REF_AREA="CA" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="19300000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="19500000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="19700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="20000000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="20300000"/>
+        </Series>
+
+        <!-- ================= PROVINCES ================= -->
+
+        <!-- QUEBEC (QC) -->
+        <Series REF_AREA="QC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="8600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="8700000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="8750000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="8800000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="8900000"/>
+        </Series>
+        <Series REF_AREA="QC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4240000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4280000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4300000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4340000"/>
+        </Series>
+        <Series REF_AREA="QC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4400000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4460000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4470000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4560000"/>
+        </Series>
+
+        <!-- ONTARIO (ON) -->
+        <Series REF_AREA="ON" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="14700000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="14900000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="15100000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="15300000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="15500000"/>
+        </Series>
+        <Series REF_AREA="ON" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="7200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="7300000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="7400000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="7500000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="7600000"/>
+        </Series>
+        <Series REF_AREA="ON" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="7500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="7600000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="7700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="7800000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="7900000"/>
+        </Series>
+
+        <!-- BRITISH COLUMBIA (BC) -->
+        <Series REF_AREA="BC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="5100000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="5200000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="5300000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="5400000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="5500000"/>
+        </Series>
+        <Series REF_AREA="BC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2550000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2600000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2650000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2700000"/>
+        </Series>
+        <Series REF_AREA="BC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2650000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2700000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2750000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2800000"/>
+        </Series>
+
+        <!-- ALBERTA (AB) -->
+        <Series REF_AREA="AB" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4400000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4450000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4500000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4550000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4600000"/>
+        </Series>
+        <Series REF_AREA="AB" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2230000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2250000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2270000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2300000"/>
+        </Series>
+        <Series REF_AREA="AB" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2220000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2250000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2280000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2300000"/>
+        </Series>
+
+        <!-- ================= QUEBEC CITIES (QC_MTL, QC_QC, QC_LAV) ================= -->
+
+        <!-- Montr�al -->
+        <Series REF_AREA="QC_MTL" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="4200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="4225000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="4250000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="4275000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="4300000"/>
+        </Series>
+        <Series REF_AREA="QC_MTL" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2050000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2063000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2076000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2089000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2102000"/>
+        </Series>
+        <Series REF_AREA="QC_MTL" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2150000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2162000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2174000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2186000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2198000"/>
+        </Series>
+
+        <!-- Quebec City -->
+        <Series REF_AREA="QC_QC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="800000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="805000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="810000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="815000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="820000"/>
+        </Series>
+        <Series REF_AREA="QC_QC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="390000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="392000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="394000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="396000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="398000"/>
+        </Series>
+        <Series REF_AREA="QC_QC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="410000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="413000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="416000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="419000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="422000"/>
+        </Series>
+
+        <!-- Laval -->
+        <Series REF_AREA="QC_LAV" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="604000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="608000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="612000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="616000"/>
+        </Series>
+        <Series REF_AREA="QC_LAV" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="295000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="296500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="298000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="299500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="301000"/>
+        </Series>
+        <Series REF_AREA="QC_LAV" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="305000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="307500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="310000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="312500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="315000"/>
+        </Series>
+
+        <!-- ================= ONTARIO CITIES (ON_TOR, ON_OTT, ON_HAM) ================= -->
+
+        <!-- Toronto -->
+        <Series REF_AREA="ON_TOR" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="6500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="6550000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="6600000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="6650000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="6700000"/>
+        </Series>
+        <Series REF_AREA="ON_TOR" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="3200000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="3226000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="3252000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="3278000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="3304000"/>
+        </Series>
+        <Series REF_AREA="ON_TOR" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="3300000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="3324000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="3348000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="3372000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="3396000"/>
+        </Series>
+
+        <!-- Ottawa -->
+        <Series REF_AREA="ON_OTT" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="1100000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="1110000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="1120000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="1130000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="1140000"/>
+        </Series>
+        <Series REF_AREA="ON_OTT" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="540000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="546000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="552000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="558000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="564000"/>
+        </Series>
+        <Series REF_AREA="ON_OTT" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="560000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="564000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="568000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="572000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="576000"/>
+        </Series>
+
+        <!-- Hamilton -->
+        <Series REF_AREA="ON_HAM" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="800000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="808000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="816000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="824000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="832000"/>
+        </Series>
+        <Series REF_AREA="ON_HAM" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="390000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="394000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="398000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="402000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="406000"/>
+        </Series>
+        <Series REF_AREA="ON_HAM" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="410000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="414000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="418000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="422000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="426000"/>
+        </Series>
+
+        <!-- ================= BRITISH COLUMBIA CITIES (BC_VAN, BC_VIC, BC_KEL) ================= -->
+
+        <!-- Vancouver -->
+        <Series REF_AREA="BC_VAN" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="2600000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="2630000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="2660000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="2690000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="2720000"/>
+        </Series>
+        <Series REF_AREA="BC_VAN" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="1280000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="1295000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="1310000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="1325000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="1340000"/>
+        </Series>
+        <Series REF_AREA="BC_VAN" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="1320000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="1335000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="1350000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="1365000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="1380000"/>
+        </Series>
+
+        <!-- Victoria -->
+        <Series REF_AREA="BC_VIC" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="400000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="404000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="408000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="412000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="416000"/>
+        </Series>
+        <Series REF_AREA="BC_VIC" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="195000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="197000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="199000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="201000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="203000"/>
+        </Series>
+        <Series REF_AREA="BC_VIC" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="205000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="207000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="209000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="211000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="213000"/>
+        </Series>
+
+        <!-- Kelowna -->
+        <Series REF_AREA="BC_KEL" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="300000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="303000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="306000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="309000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="312000"/>
+        </Series>
+        <Series REF_AREA="BC_KEL" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="147000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="148500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="150000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="151500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="153000"/>
+        </Series>
+        <Series REF_AREA="BC_KEL" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="153000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="154500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="156000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="157500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="159000"/>
+        </Series>
+
+        <!-- ================= ALBERTA CITIES (AB_CAL, AB_EDM, AB_RED) ================= -->
+
+        <!-- Calgary -->
+        <Series REF_AREA="AB_CAL" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="1800000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="1820000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="1840000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="1860000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="1880000"/>
+        </Series>
+        <Series REF_AREA="AB_CAL" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="890000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="899000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="908000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="917000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="926000"/>
+        </Series>
+        <Series REF_AREA="AB_CAL" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="910000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="921000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="932000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="943000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="954000"/>
+        </Series>
+
+        <!-- Edmonton -->
+        <Series REF_AREA="AB_EDM" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="1500000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="1515000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="1530000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="1545000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="1560000"/>
+        </Series>
+        <Series REF_AREA="AB_EDM" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="740000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="747000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="754000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="761000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="768000"/>
+        </Series>
+        <Series REF_AREA="AB_EDM" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="760000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="768000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="776000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="784000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="792000"/>
+        </Series>
+
+        <!-- Red Deer -->
+        <Series REF_AREA="AB_RED" SEX="T">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="300000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="303000"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="306000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="309000"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="312000"/>
+        </Series>
+        <Series REF_AREA="AB_RED" SEX="M">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="148000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="149500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="151000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="152500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="154000"/>
+        </Series>
+        <Series REF_AREA="AB_RED" SEX="F">
+            <Obs TIME_PERIOD="2020" OBS_VALUE="152000"/>
+            <Obs TIME_PERIOD="2021" OBS_VALUE="153500"/>
+            <Obs TIME_PERIOD="2022" OBS_VALUE="155000"/>
+            <Obs TIME_PERIOD="2023" OBS_VALUE="156500"/>
+            <Obs TIME_PERIOD="2024" OBS_VALUE="158000"/>
+        </Series>
+
+    </message:DataSet>
+</message:StructureSpecificData>

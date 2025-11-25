@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+  <message:Header>
+    <message:ID>HCL_REF_AREA</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2025-10-16T11:00:00-04:00</message:Prepared>
+    <message:Sender id="STAT"/>
+  </message:Header>
+
+  <message:Structures>
+    <structure:HierarchicalCodelists>
+
+      <structure:HierarchicalCodelist id="HCL_REF_AREA" agencyID="STAT" version="1.0">
+        <common:Name xml:lang="en">Reference area hierarchy</common:Name>
+        <common:Name xml:lang="fr">Hiérarchie des zones géographiques</common:Name>
+
+        <structure:IncludedCodelist>
+          <Ref package="codelist" class="Codelist"
+               agencyID="STAT" id="CL_REF_AREA" version="1.0"/>
+        </structure:IncludedCodelist>
+
+        <structure:Hierarchy id="CA_HIER">
+          <common:Name xml:lang="en">Canada – provinces and cities</common:Name>
+          <common:Name xml:lang="fr">Canada – provinces et villes</common:Name>
+
+          <!-- Root: Canada -->
+          <structure:HierarchicalCode id="CA_NODE">
+            <structure:Code>
+              <Ref
+                  package="codelist"
+                  class="Code"
+                  agencyID="STAT"
+                  maintainableParentID="CL_REF_AREA"
+                  maintainableParentVersion="1.0"
+                  id="CA"/>
+            </structure:Code>
+
+            <!-- ===== Alberta + cities ===== -->
+            <structure:HierarchicalCode id="AB_NODE">
+              <structure:Code>
+                <Ref
+                    package="codelist"
+                    class="Code"
+                    agencyID="STAT"
+                    maintainableParentID="CL_REF_AREA"
+                    maintainableParentVersion="1.0"
+                    id="AB"/>
+              </structure:Code>
+
+              <structure:HierarchicalCode id="AB_CAL_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="AB_CAL"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="AB_EDM_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="AB_EDM"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="AB_RED_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="AB_RED"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+            </structure:HierarchicalCode>
+
+            <!-- ===== British Columbia + cities ===== -->
+            <structure:HierarchicalCode id="BC_NODE">
+              <structure:Code>
+                <Ref
+                    package="codelist"
+                    class="Code"
+                    agencyID="STAT"
+                    maintainableParentID="CL_REF_AREA"
+                    maintainableParentVersion="1.0"
+                    id="BC"/>
+              </structure:Code>
+
+              <structure:HierarchicalCode id="BC_VAN_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="BC_VAN"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="BC_VIC_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="BC_VIC"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="BC_KEL_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="BC_KEL"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+            </structure:HierarchicalCode>
+
+            <!-- ===== Ontario + cities ===== -->
+            <structure:HierarchicalCode id="ON_NODE">
+              <structure:Code>
+                <Ref
+                    package="codelist"
+                    class="Code"
+                    agencyID="STAT"
+                    maintainableParentID="CL_REF_AREA"
+                    maintainableParentVersion="1.0"
+                    id="ON"/>
+              </structure:Code>
+
+              <structure:HierarchicalCode id="ON_TOR_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="ON_TOR"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="ON_OTT_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="ON_OTT"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="ON_HAM_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="ON_HAM"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+            </structure:HierarchicalCode>
+
+            <!-- ===== Quebec + cities ===== -->
+            <structure:HierarchicalCode id="QC_NODE">
+              <structure:Code>
+                <Ref
+                    package="codelist"
+                    class="Code"
+                    agencyID="STAT"
+                    maintainableParentID="CL_REF_AREA"
+                    maintainableParentVersion="1.0"
+                    id="QC"/>
+              </structure:Code>
+
+              <structure:HierarchicalCode id="QC_MTL_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="QC_MTL"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="QC_QC_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="QC_QC"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+
+              <structure:HierarchicalCode id="QC_LAV_NODE">
+                <structure:Code>
+                  <Ref
+                      package="codelist"
+                      class="Code"
+                      agencyID="STAT"
+                      maintainableParentID="CL_REF_AREA"
+                      maintainableParentVersion="1.0"
+                      id="QC_LAV"/>
+                </structure:Code>
+              </structure:HierarchicalCode>
+            </structure:HierarchicalCode>
+
+          </structure:HierarchicalCode>
+        </structure:Hierarchy>
+
+      </structure:HierarchicalCodelist>
+
+    </structure:HierarchicalCodelists>
+  </message:Structures>
+</message:Structure>
