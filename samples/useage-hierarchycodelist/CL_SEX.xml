@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+    <message:Header>
+        <message:ID>CODELISTS</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+    </message:Header>
+
+    <message:Structures>
+        <structure:Codelists>
+            <!-- CL_SEX -->
+            <structure:Codelist id="CL_SEX" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Sex</common:Name>
+                <common:Name xml:lang="fr">Sexe</common:Name>
+
+                <structure:Code id="T"><common:Name xml:lang="en">Total</common:Name><common:Name xml:lang="fr">Total</common:Name></structure:Code>
+                <structure:Code id="M"><common:Name xml:lang="en">Male</common:Name><common:Name xml:lang="fr">Homme</common:Name></structure:Code>
+                <structure:Code id="F"><common:Name xml:lang="en">Female</common:Name><common:Name xml:lang="fr">Femme</common:Name></structure:Code>
+            </structure:Codelist>
+
+        </structure:Codelists>
+    </message:Structures>
+</message:Structure>
