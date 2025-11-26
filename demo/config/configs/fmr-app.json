@@ -12,6 +12,7 @@
         "delete": "http://host.docker.internal:80/rest",
         "version": "1.5.0"
       },
+      "agencies": ["STAT"],
       "auth": "OIDC_PKCE",
       "oidc": {
         "config": "http://host.docker.internal:8080/realms/demo/.well-known/openid-configuration",
