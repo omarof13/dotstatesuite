@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message:Structure
+    xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+
+    <message:Header>
+        <message:ID>ORG_SCHEMES</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-10-16T10:25:00-04:00</message:Prepared>
+        <message:Sender id="STAT"/>
+    </message:Header>
+
+    <message:Structures>
+        <structure:OrganisationSchemes>
+            <structure:AgencyScheme id="AGENCIES" agencyID="STAT" version="1.0">
+                <common:Name xml:lang="en">Stat Agency Scheme</common:Name>
+                <common:Name xml:lang="fr">Schéma d'agence Stat</common:Name>
+
+                <structure:Agency id="STAT">
+                    <common:Name xml:lang="en">Statistics Canada</common:Name>
+                    <common:Name xml:lang="fr">Statistique Canada</common:Name>
+                </structure:Agency>
+            </structure:AgencyScheme>
+        </structure:OrganisationSchemes>
+    </message:Structures>
+</message:Structure>
