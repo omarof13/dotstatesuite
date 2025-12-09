@@ -30,7 +30,7 @@ DLM (http://localhost:7000)
 
 
 8 - Upload data & referential metadata (load data)
-8.1 -  Add files and select POP_DATA.xml
+8.1 - select POP_DATA.xml
 
 9- categorize the DF_POP dataflow
 9.1 select the menu at the right of the dataflow and select categorize structure
